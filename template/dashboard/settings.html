@@ -1,0 +1,195 @@
+{% extends 'dashboard_base.html' %}
+{% load static %}
+{% block title %} - Settings {% endblock %}
+
+{% block content %}
+
+    <main id="main" class="bg-light" style="padding-bottom: 10rem;">
+        <nav id="logged_in" class="d-flex justify-content-end align-items-center py-2">
+            <div class="notification me-2">
+                <i class="bi bi-bell-fill"></i>
+            </div>
+            <div class="profile_content d-flex align-items-center bg-light">
+                <div class="profile_picture me-2">
+                    {% if account.profile_image %}
+                    <img src="{{ request.user.profile_image.url }}" alt="profile_img" class="img-fluid" profile-picture>
+                        {% else %}
+                        <img src="{% static 'default_profile/default-profile.png' %}" alt="profile-picture" class="img-fluid">
+                        {% endif %}
+                    
+                </div>
+                <div class="profile_logo d-flex flex-column">
+                    <span id="username">{{ request.user.username}}</span>
+                    <small id="email">{{ request.user.email }}</small>
+                </div>
+            </div>
+        </nav>
+
+        <!-------------------------------------
+            # Settings Bar -> Sub Dashboard
+        -------------------------------------->
+
+        <section class="container-fluid d-flex flex-column justify-content-center align-items-center bg-light g-0 " id="settings_bar">
+            <div class="sub_dash">
+                <div class="ms-3 settings_header">
+                    <h4>Settings</h4>
+                </div>
+
+                <!-- setting -->
+                <div class="setting d-flex active" api="account">
+                    <div>
+                        <div class="title fw-bold">
+                            Account
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div class="sub_text text-muted">
+                            <small>
+                                Easily launch  assignments, quizzes, and tests. Student results
+                                are automatically entered in the online gradebook.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--setting -->
+                <div class="setting d-flex" api="notification">
+                    <div>
+                        <div class="title fw-bold">
+                            Notification
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div class="sub_text text-muted">
+                            <small>
+                                Easily launch assignments, quizzes, and tests. Student results
+                                are automatically entered in the online gradebook.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--setting -->
+                <div class="setting d-flex" api="security">
+                    <div>
+                        <div class="title fw-bold">
+                            Security
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div class="sub_text text-muted">
+                            <small>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Rerum fugit ipsam iusto odit quisquam quibusdam magni!
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--setting -->
+                <div class="setting d-flex">
+                    <div>
+                        <div class="title fw-bold">
+                            Privacy
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div class="sub_text text-muted">
+                            <small>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Rerum fugit ipsam iusto odit quisquam quibusdam magni!
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- sub-dash -->
+            </div>
+
+        <!-- settings-bar -->
+        </section>
+
+        <!-----------------------------
+            # Settings Screen
+        ------------------------------>
+
+        <section class="px-5" id="setting_screen" api="settings">
+            <div class="account_header text-start d-flex flex-column">
+                <h3>Profile</h3>
+
+                <small class="text-muted">
+                    This information belongs to you it's advisable you don't share it with anyone
+                </small>
+
+            </div>
+            <div class="row account_row justify-content-center align-items-center g-0">
+                {% if request.user.is_authenticated %}
+                <div class="profile_picture col-md-6 col-sm-8 col-12">
+                    <div>
+                        {% if account.profile_image %}
+                        <img src="{{ request.user.profile_image.url }}" alt="profile-picture" class="img-fluid">
+                        {% else %}
+                        <img src="{% static 'default_profile/default-profile.png' %}" alt="profile-picture" class="img-fluid">
+                        {% endif %}
+                    </div>
+                    <div class="profile-name d-flex flex-column align-items-center pt-3">
+                        <span class="fw-bold fs-4" id="name">{{ request.user.username }}</span>
+                        <small id="email">{{ request.user.email }}</small>
+                    </div>
+                    <div class="icon_badge">
+                        <i class="fa fa-camera profile_badge" selection="profile-picture"></i>
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="profile_content col-md-6 col-sm-10 col-12">
+                    <form>
+                        <div class="input-group mb-3">
+                            <label for="first-name">First Name</label>
+                            <div class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <input type="text" value="Ngere Harry" class="form-control" id="first-name">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label for="last-name">Last Name</label>
+                            <div class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                            <label for="Email">Email</label>
+                            <div class="input-group-text">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <input type="email" class="form-control" id="Email">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label for="grade">Choose Of Grades</label>
+                            <select class="form-control" id="grade">
+                                <option>Grade</option>
+                                <option>Grade</option>
+                                <option>Grade</option>
+                            </select>
+                            <div class="input-group-text">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group changes mt-3">
+                            <input type="submit" value="Save Changes">
+                        </div>
+                        
+
+                    </form>
+                    
+                </div>
+                
+
+            </div><!-- row -->
+        </section>
+
+
+    </main>
+
+{% endblock %}

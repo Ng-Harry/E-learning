@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../assets/vendors/bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendors/bootstrap-icons/bootstrap-icons-1.5.0/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendors/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" type="text/css" rel="stylesheet">
+    <title>Wishlist | iSTEM</title>
+</head>
+<body>
+    
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-text-paragraph mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <a class="col-1 text-center p-0" id="logo" href="../../index.html">
+                    <img src="../../assets/images/logo.png" alt="logo" class="img-fluid">
+                    </a>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li>
+                        <a href="explore.html" class="nav-link">
+                            <i class="bi bi-layout-wtf"></i> <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quickbuy.html" class="nav-link active quickbuy">
+                            <i class="bi bi-journal-text"></i> <span>Quick Buy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quiz.html" class="nav-link">
+                            <i class="bi bi-receipt-cutoff"></i> <span>Quiz</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-receipt"></i> <span>Grade</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-reception-4"></i> <span>Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-link">
+                            <i class="fa fa-cog"></i> <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-door-open"></i> <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header>
+
+    <!----------------------------------
+        # Main
+    ----------------------------------->
+    <!-- <main id="main" class="bg-light"> -->
+        <nav id="logged_in" class="d-flex justify-content-end align-items-center py-2">
+            <div class="notification me-2">
+                <i class="bi bi-bell-fill"></i>
+            </div>
+            <div class="profile_content d-flex align-items-center bg-light">
+                <div class="profile_picture me-2">
+                    <img src="../../assets/images/profile.jpg" alt="profile_img" class="img-fluid">
+                </div>
+                <div class="profile_logo d-flex flex-column">
+                    <span id="username">Micheal Cruz</span>
+                    <small id="email">michealcruz&commat;domain.com</small>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="wishlist py-4" selection="wishlist-table">
+            <div class="header">
+                <h3>Wishlist</h3>
+            </div>
+            <div class="overflow-x table-responsive">
+                
+                <table class="table align-middle table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Book Cover</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody selection="wishlist-directory">
+                        <!-- <tr>
+                            <td>
+                                <div book-cover></div>
+                            </td>
+                            <td>Mathemetics</td>
+                            <td>&dollar;375</td>
+                            <td>
+                                <button type="submit" class="ms-2 btn" select="buy-book">Buynow</button>
+                                <button type="submit" class="ms-2 btn" select="remove-list">Remove</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div book-cover></div>
+                            </td>
+                            <td>Mathemetics</td>
+                            <td>&dollar;375</td>
+                            <td>
+                                <button type="submit" class="ms-2 btn">Buynow</button>
+                                <button type="submit" class="ms-2 btn">Remove</button>
+                            </td>
+                        </tr>
+
+                         -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+    <!-- </main> -->
+
+
+    <script src="../../assets/js/code.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+{% extends 'dashboard_base.html' %}
+{% load static %}
+{% block title %} - Explore {% endblock %}
+
+{% block content %}
+
+<main id="main" class="bg-light">
+
+    <nav id="logged_in" class="d-flex justify-content-end align-items-center py-2">
+        <div class="notification me-2">
+            <i class="bi bi-bell-fill"></i>
+        </div>
+        <div class="profile_content d-flex align-items-center bg-light">
+            <div class="profile_picture me-2">
+                <img src="../assets/images/profile.jpg" alt="profile_img" class="img-fluid">
+            </div>
+            <div class="profile_logo d-flex flex-column">
+                <span id="username">Micheal Cruz</span>
+                <small id="email">michealcruz&commat;domain.com</small>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-5 d-flex justify-content-center align-items-center text-center" id="search_nav">
+        <div class="search-box">
+            <span class="text-muted mt-2">What do you want to study</span>
+            <div class="search_bar input-group">
+                <div class="input-group-text">
+                    <i class="fa fa-search"></i>
+                </div>
+                <input type="text" class="form-control" placeholder="courses...">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- First Course -->
+    <div class="container-lg courses-slide pb-2">
+        <div class="course_text">
+            <h4 class="m-0 ms-2">MATHEMATICS</h4>
+        </div>
+        <div class="slide-container swiper">
+            <div class="slide-content slide-one">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <div class="course_card card swiper-slide">
+                        <div class="course_img">
+                            <div id="overlay"></div>
+                        </div>
+                        <div class="course_title">
+                            <div class="cr_badge">lesson</div>
+                            <div class="main_title mt-4 text-center">Algebraic Formular</div>
+                        </div>
+                    </div><!-- card -->
+
+                    <div class="course_card card swiper-slide">
+                        <div class="course_img">
+                            <div id="overlay"></div>
+                        </div>
+                        <div class="course_title">
+                            <div class="cr_badge">lesson</div>
+                            <div class="main_title mt-4 text-center">Algebraic Formular</div>
+                        </div>
+                    </div><!-- card -->
+
+                    <div class="course_card card swiper-slide">
+                        <div class="course_img">
+                            <div id="overlay"></div>
+                        </div>
+                        <div class="course_title">
+                            <div class="cr_badge">lesson</div>
+                            <div class="main_title mt-4 text-center">Algebraic Formular</div>
+                        </div>
+                    </div><!-- card -->
+
+                    <div class="course_card card swiper-slide">
+                        <div class="course_img">
+                            <div id="overlay"></div>
+                        </div>
+                        <div class="course_title">
+                            <div class="cr_badge">lesson</div>
+                            <div class="main_title mt-4 text-center">Algebraic Formular</div>
+                        </div>
+                    </div><!-- card -->
+
+                </div>
+            </div><!-- slide-content -->
+
+
+
+        </div>
+        <div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Second Course -->
+    <div class="container-lg courses-slide pb-2">
+        <div class="course_text">
+            <h4 class="m-0 ms-2">GRAMMAR</h4>
+        </div>
+        <div class="slide-container swiper">
+            <div class="slide-content slide-two">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <div class="course_card card swiper-slide">
+                        <div class="course_img two">
+                            <div id="overlay"></div>
+                        </div>
+                        <div class="course_title">
+                            <div class="cr_badge">lesson</div>
+                            <div class="main_title mt-4 text-center">Algebraic Formular</div>
+                        </div>
+                    </div><!-- card -->
+
+                    <div class="course_card card swiper-slide">
+                        <div class="course_img two">
+                            <div id="overlay"></div>
+                        </div>
+                        <div class="course_title">
+                            <div class="cr_badge">lesson</div>
+                            <div class="main_title mt-4 text-center">Algebraic Formular</div>
+                        </div>
+                    </div><!-- card -->
+
+                    <div class="course_card card swiper-slide">
+                        <div class="course_img two">
+                            <div id="overlay"></div>
+                        </div>
+                        <div class="course_title">
+                            <div class="cr_badge">lesson</div>
+                            <div class="main_title mt-4 text-center">Algebraic Formular</div>
+                        </div>
+                    </div><!-- card -->
+
+                    <div class="course_card card swiper-slide">
+                        <div class="course_img two">
+                            <div id="overlay"></div>
+                        </div>
+                        <div class="course_title">
+                            <div class="cr_badge">lesson</div>
+                            <div class="main_title mt-4 text-center">Algebraic Formular</div>
+                        </div>
+                    </div><!-- card -->
+
+                </div>
+            </div><!-- slide-content -->
+
+
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- custom swiper btns -->
+        <div class="swiper_btns">
+            <i class="bi bi-chevron-left swiper-navBtn swiper_nav_prev"></i>
+            <i class="bi bi-chevron-right swiper-navBtn swiper_nav_next"></i>
+        </div>
+    </div>
+
+    <!-- <svg width="1250" height="285" viewBox="0 0 1450 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M862.723 19.5487C639.912 -82.021 194.737 236.862 0 409H1449.79C1380.64 409 1141.24 146.511 862.723 19.5487Z"
+                fill="#1D1051" fill-opacity="0.03" />
+        </svg> -->
+
+
+
+</main>
+
+{% endblock %}

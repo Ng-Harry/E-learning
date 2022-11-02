@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/vendors/swiper/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendors/bootstrap-icons/bootstrap-icons-1.5.0/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendors/bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendors/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="../assets/css/style.css" type="text/css" rel="stylesheet">
+    <title>Quickbuy | iSTEM</title>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-text-paragraph mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <a class="col-1 text-center p-0" id="logo" href="../index.html"><img src="../assets/images/logo.png" alt="logo" class="img-fluid"></a>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li>
+                        <a href="explore.html" class="nav-link">
+                            <i class="bi bi-layout-wtf"></i> <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quickbuy.html" class="nav-link active">
+                            <i class="bi bi-journal-text"></i> <span>Quick Buy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quiz.html" class="nav-link">
+                            <i class="bi bi-receipt-cutoff"></i> <span>Quiz</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-receipt"></i> <span>Grade</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-reception-4"></i> <span>Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-link">
+                            <i class="fa fa-cog"></i> <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-door-open"></i> <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header>
+
+    <main id="main" class="bg-light">
+        <nav id="logged_in" class="d-flex justify-content-end align-items-center py-2">
+            <div class="notification me-2">
+                <i class="bi bi-bell-fill"></i>
+            </div>
+            <div class="profile_content d-flex align-items-center bg-light">
+                <div class="profile_picture me-2">
+                    <img src="../assets/images/profile.jpg" alt="profile_img" class="img-fluid">
+                </div>
+                <div class="profile_logo d-flex flex-column">
+                    <span id="username">Micheal Cruz</span>
+                    <small id="email">michealcruz&commat;domain.com</small>
+                </div>
+
+                <div class="ms-2 text-center dropdown"  nav-dropdown>
+                    <i class="bi bi-chevron-down dropdown-toggle" id="profile-nav-dropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false"></i>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="profile-nav-dropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="d-flex flex-column message-content">
+                                    <span>New Message</span>
+                                    <span>New Message</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="d-flex flex-column message-content">
+                                    <span>New Message</span>
+                                    <span>New Message</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="d-flex flex-column message-content">
+                                    <span>New Message</span>
+                                    <span>New Message</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+
+        <div class="py-5 pb-0 d-flex flex-column justify-content-center align-items-center text-center" id="search_nav" slide> 
+            <div class="search-box">
+                <div class="search_bar input-group">
+                    <div class="input-group-text">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <input type="text" class="form-control" placeholder="search for books you want to quickbuy">
+                </div>
+            </div>
+            <div class="other_choices d-flex justify-content-end col-12 mt-md-3 mt-5">
+
+                <div>
+                    <select class="me-2">
+                        <option selected>Term</option>
+                        <option>Term 1</option>
+                        <option>Term 2</option>
+                        <option>Term 3</option>
+                    </select>
+                    <select class="me-2">
+                        <option selected>Course</option>
+                        <option>course</option>
+                        <option>course</option>
+                        <option>course</option>
+                    </select>
+                </div>
+                <div class="me-2">
+                    <a href="#" class="btn wishlist_btn" selection="direct-to-wishlist">Wishlist</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="justify-content-center align-items-center p-5 g-0 bundle_container" slide>
+            <div class="row bundle_row g-0 gx-4">
+                <div class="col-md-3 bundle">
+                    <div class="bundler">
+
+                        <div class="bundle_header" selection="book-cover">
+                            <div id="overlay"></div>
+                        </div>
+                        <div>
+                            <div class="bundle_content">
+                                <div>
+                                    <h4 class="text-start" selection="book-title">Kindergaten Reading Bundle</h4>
+                                    <small class="me-2 text-muted mt-4" style="text-decoration: line-through!important;">&dollar;12.49</small>
+                                    <small class="text-muted mb-4" selection="book-price">10.50</small>
+                                </div>
+                            </div>
+                            <div class="fav-btn d-flex align-items-center justify-content-between px-3">
+                                <button class="btn" type="submit" buy>Quickbuy</button>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- bundle -->
+
+                <div class="col-md-3 bundle">
+                    <div class="bundler">
+
+                        <div class="bundle_header">
+                            <div id="overlay"></div>
+                        </div>
+                        <div>
+                            <div class="bundle_content">
+                                <div>
+                                    <h4 class="text-start">Kindergaten Reading Bundle 2</h4>
+                                    <small class="me-2 text-muted mt-4" style="text-decoration: line-through!important;">&dollar;12.49</small>
+                                    <small class="text-muted mb-4">10.50</small>
+                                </div>
+                            </div>
+                            <div class="fav-btn d-flex align-items-center justify-content-between px-3">
+                                <button class="btn" type="submit" buy>Quickbuy</button>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- bundle -->
+
+                <div class="col-md-3 bundle">
+                    <div class="bundler">
+
+                        <div class="bundle_header">
+                            <div id="overlay"></div>
+                        </div>
+                        <div>
+                            <div class="bundle_content">
+                                <div>
+                                    <h4 class="text-start">Kindergaten Reading Bundle</h4>
+                                    <small class="me-2 text-muted mt-4" style="text-decoration: line-through!important;">&dollar;12.49</small>
+                                    <small class="text-muted mb-4">10.50</small>
+                                </div>
+                            </div>
+                            <div class="fav-btn d-flex align-items-center justify-content-between px-3">
+                               <button class="btn" type="submit" buy>Quickbuy</button>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- bundle -->
+
+                <div class="col-md-3 bundle">
+                    <div class="bundler">
+
+                        <div class="bundle_header">
+                            <div id="overlay"></div>
+                        </div>
+                        <div>
+                            <div class="bundle_content">
+                                <div>
+                                    <h4 class="text-start">Kindergaten Reading Bundle</h4>
+                                    <small class="me-2 text-muted mt-4" style="text-decoration: line-through!important;">&dollar;12.49</small>
+                                    <small class="text-muted mb-4">10.50</small>
+                                </div>
+                            </div>
+                            <div class="fav-btn d-flex align-items-center justify-content-between px-3">
+                               <button class="btn" type="submit" buy>Quickbuy</button>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- bundle -->
+
+                <div class="col-md-3 bundle">
+                    <div class="bundler">
+
+                        <div class="bundle_header">
+                            <div id="overlay"></div>
+                        </div>
+                        <div>
+                            <div class="bundle_content">
+                                <div>
+                                    <h4 class="text-start">Kindergaten Reading Bundle</h4>
+                                    <small class="me-2 text-muted mt-4" style="text-decoration: line-through!important;">&dollar;12.49</small>
+                                    <small class="text-muted mb-4">10.50</small>
+                                </div>
+                            </div>
+                            <div class="fav-btn d-flex align-items-center justify-content-between px-3">
+                               <button class="btn" type="submit" buy>Quickbuy</button>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- bundle -->
+
+                <div class="col-md-3 bundle">
+                    <div class="bundler">
+
+                        <div class="bundle_header">
+                            <div id="overlay"></div>
+                        </div>
+                        <div>
+                            <div class="bundle_content">
+                                <div>
+                                    <h4 class="text-start">Kindergaten Reading Bundle</h4>
+                                    <small class="me-2 text-muted mt-4" style="text-decoration: line-through!important;">&dollar;12.49</small>
+                                    <small class="text-muted mb-4">10.50</small>
+                                </div>
+                            </div>
+                            <div class="fav-btn d-flex align-items-center justify-content-between px-3">
+                               <button class="btn" type="submit" buy>Quickbuy</button>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- bundle -->
+
+                <div class="col-md-3 bundle">
+                    <div class="bundler">
+
+                        <div class="bundle_header">
+                            <div id="overlay"></div>
+                        </div>
+                        <div>
+                            <div class="bundle_content">
+                                <div>
+                                    <h4 class="text-start">Kindergaten Reading Bundle</h4>
+                                    <small class="me-2 text-muted mt-4" style="text-decoration: line-through!important;">&dollar;12.49</small>
+                                    <small class="text-muted mb-4">10.50</small>
+                                </div>
+                            </div>
+                            <div class="fav-btn d-flex align-items-center justify-content-between px-3">
+                               <button class="btn" type="submit" buy>Quickbuy</button>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- bundle -->
+
+                <div class="col-md-3 bundle">
+                    <div class="bundler">
+
+                        <div class="bundle_header">
+                            <div id="overlay"></div>
+                        </div>
+                        <div>
+                            <div class="bundle_content">
+                                <div>
+                                    <h4 class="text-start">Kindergaten Reading Bundle</h4>
+                                    <small class="me-2 text-muted mt-4" style="text-decoration: line-through!important;">&dollar;12.49</small>
+                                    <small class="text-muted mb-4">10.50</small>
+                                </div>
+                            </div>
+                            <div class="fav-btn d-flex align-items-center justify-content-between px-3">
+                               <button class="btn" type="submit" buy>Quickbuy</button>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- bundle -->
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="../assets/vendors/bootstrap-5.0.2/bootstrap-5.0.2/dist/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/wishlist.js"></script>
+    <script src="../assets/js/code.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

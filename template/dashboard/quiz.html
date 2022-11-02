@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/vendors/swiper/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendors/bootstrap-icons/bootstrap-icons-1.5.0/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendors/bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendors/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="../assets/css/style.css" type="text/css" rel="stylesheet">
+    <title>Quiz | iSTEM</title>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-text-paragraph mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <a class="col-1 text-center p-0" id="logo" href="#"><img src="../assets/images/logo.png" alt="logo" class="img-fluid"></a>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li>
+                        <a href="explore.html" class="nav-link">
+                            <i class="bi bi-layout-wtf"></i> <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quickbuy.html" class="nav-link quickbuy">
+                            <i class="bi bi-journal-text"></i> <span>Quick Buy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link active">
+                            <i class="bi bi-receipt-cutoff"></i> <span>Quiz</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-receipt"></i> <span>Grade</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-reception-4"></i> <span>Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-link">
+                            <i class="fa fa-cog"></i> <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-door-open"></i> <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header>
+
+    <main id="main" class="bg-light">
+        <nav id="logged_in" class="d-flex justify-content-end align-items-center py-2">
+            <div class="notification me-2">
+                <i class="bi bi-bell-fill"></i>
+            </div>
+            <div class="profile_content d-flex align-items-center bg-light">
+                <div class="profile_picture me-2">
+                    <img src="../assets/images/profile.jpg" alt="profile_img" class="img-fluid">
+                </div>
+                <div class="profile_logo d-flex flex-column">
+                    <span id="username">Micheal Cruz</span>
+                    <small id="email">michealcruz&commat;domain.com</small>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container-fluid d-flex flex-column justify-content-center align-items-center g-0 text-center" id="quiz_section">
+            <div class="quiz_subject mt-5 mb-4 fw-bold">
+                <div class="text-end text-danger col-12">
+                    <span class="timer bi bi-alarm"> 0:00s</span>
+                </div>
+                <div>Course: Mathemetics</div>
+                <div>1/10</div>
+            </div>
+
+            <div class="quiz_brief text-muted">
+                <small class="text-start">
+                    <span class="d-block">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Beatae dignissimos autem voluptates ipsum pariatur enim.
+                    </span>
+                    <span class="d-block">
+                        Dolor pariatur inventore quam doloribus.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe mollitia 
+                    </span>
+                    <span class="d-block">
+                        excepturi corporis.
+                    </span>
+                </small>
+            </div>
+
+            <form class="col-12 d-flex justify-content-center flex-column align-items-center">
+                <div class="quiz_answer_select pb-2">
+                    <div class="answer">
+                        <div>
+                            <span class="fw-bold">A</span>
+                        </div>
+                    </div><!-- answer -->
+    
+                    <div class="answer">
+                        <div>
+                            <span class="fw-bold">B</span>
+                        </div>
+                    </div><!-- answer -->
+    
+                    <div class="answer">
+                        <div>
+                            <span class="fw-bold">C</span>
+                        </div>
+                    </div><!-- answer -->
+    
+                    <div class="answer">
+                        <div>
+                            <span class="fw-bold">D</span>
+                        </div>
+                    </div><!-- answer -->
+    
+                    <div class="answer">
+                        <div>
+                            <span class="fw-bold">E</span>
+                        </div>
+                    </div><!-- answer -->
+    
+                </div>
+                <div class="pagination d-flex justify-content-end">
+                    <button class="btn prev me-3">previous</button>
+                    <a type="button" class="btn next" nextquiz>next</a>
+                </div>
+
+            </form>
+
+            <!-----------------------------
+                # Quiz Alerts
+            ------------------------------>
+            <div class="modal fade show start-modal" id="quiz-alert" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="quiz-alert" aria-hidden="false">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body fw-bold">
+                        <p>
+                            This Quiz will be timed <span class="text-danger fw-bold">3:00</span> minutes
+                        </p>
+                        <button type="button" class="btn" quiz-time data-bs-dismiss="modal">Start Quiz</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal fade show end-quiz" id="quiz-alert" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="quiz-alert" aria-hidden="false">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body result">
+                        <p class="fw-bold">
+                            Time's Up! <br>
+                            Submitting result
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <!-- <div class="bd-example">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quiz-alert">
+                Launch static backdrop modal
+                </button>
+            </div> -->
+        </section>
+
+
+
+    </main>
+
+    <script src="../assets/js/code.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/vendors/bootstrap-5.0.2/bootstrap-5.0.2/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

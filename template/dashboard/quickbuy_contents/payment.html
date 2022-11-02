@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../assets/vendors/bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendors/bootstrap-icons/bootstrap-icons-1.5.0/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendors/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" type="text/css" rel="stylesheet">
+    <title>Payments | iSTEM</title>
+</head>
+<body>
+    
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-text-paragraph mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <a class="col-1 text-center p-0" id="logo" href="../../index.html">
+                    <img src="../../assets/images/logo.png" alt="logo" class="img-fluid">
+                    </a>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li>
+                        <a href="explore.html" class="nav-link">
+                            <i class="bi bi-layout-wtf"></i> <span>Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quickbuy.html" class="nav-link active quickbuy">
+                            <i class="bi bi-journal-text"></i> <span>Quick Buy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quiz.html" class="nav-link">
+                            <i class="bi bi-receipt-cutoff"></i> <span>Quiz</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-receipt"></i> <span>Grade</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-reception-4"></i> <span>Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-link">
+                            <i class="fa fa-cog"></i> <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-door-open"></i> <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header>
+
+    <!----------------------------------
+        # Main
+    ----------------------------------->
+    <nav id="logged_in" class="d-flex justify-content-end align-items-center py-2">
+        <div class="notification me-2">
+            <i class="bi bi-bell-fill"></i>
+        </div>
+        <div class="profile_content d-flex align-items-center bg-light">
+            <div class="profile_picture me-2">
+                <img src="../../assets/images/profile.jpg" alt="profile_img" class="img-fluid">
+            </div>
+            <div class="profile_logo d-flex flex-column">
+                <span id="username">Micheal Cruz</span>
+                <small id="email">michealcruz&commat;domain.com</small>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="payment-method">
+        <div class="header">
+            <h5>Payment Methods</h5>
+            <small>Fill up your card information</small>
+        </div>
+
+        <form class="pay-form">
+            <div class="input-field">
+                <label for="card-name">CREDIT CARD NUMBER</label>
+                <input type="number" class="form-control" id="card-name" placeholder="**** **** **** 5321">
+            </div>
+            
+            <!-- Cvv -->
+            <div class="input-group">
+                <label for="cvv">Cvv</label>
+                <!-- incorperate max-length -->
+                <input type="text" id="cvv" maxlength="3" class="form-control" maxlength="6">
+            </div>
+
+            <div class="input-field d-flex">
+                <div class="input-flex">
+                    <label for="card-number">Card Number</label>
+                    <input type="number" class="form-control" id="card-number">
+                </div>
+                <div class="icons d-flex">
+                    <div class="icon"></div>
+                    <div class="icon" style="background-image: url(../../assets/images/visa_icon.svg);"></div>
+                </div>
+            </div>
+
+            <div class="card-details">
+                <div class="header">
+                    <label>Expiry Date</label>
+                </div>
+
+                <div class="input-groups d-flex justify-content-around">
+
+                    <!-- Month -->
+                    <div class="input-group">
+                        <label for="month">Month</label>
+                        <select class="form-control" id="month">
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        <div class="input-group-text">
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <!-- Year -->
+                    <div class="input-group">
+                        <label for="year">Year</label>
+                        <select class="form-control" id="year">
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                        </select>
+                        <div class="input-group-text">
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card details -->
+            </div>
+        </form>
+    </div>
+
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
