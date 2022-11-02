@@ -1,1 +1,1 @@
-web: gunicorn ApiProject.wsgi
+web: gunicorn iSTEM.wsgi
