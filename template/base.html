@@ -20,13 +20,16 @@
 <body>
 {% block content %}
 {% endblock %}
-</body>
+
 <script src="{% static 'vendor/aos-master/dist/aos.js' %}" type="text/javascript"></script>
+<script>
+    AOS.init();
+</script>
 <script src="{% static 'vendor/apexcharts-bundle/dist/apexcharts.js' %}" type="text/javascript"></script>
 <script src="{% static 'vendor/bootstrap-5.0.2/bootstrap-5.0.2/dist/js/bootstrap.min.js' %}"
     type="text/javascript"></script>
 <script src="{% static 'vendor/jquery/jquery-3.6.0.min.js' %}" type="text/javascript"></script>
 <script src="{% static 'vendor/jquery/jquery-3.6.0.slim.min.js' %}" type="text/javascript"></script>
 <script src="{% static 'js/code.js' %}" type="text/javascript"></script>
-
+</body>
 </html>
