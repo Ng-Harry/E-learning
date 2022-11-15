@@ -8,13 +8,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-5(1+%gjan1d7zf84&%_va7=r97ws!pcyj)h-flpmr_)4+(a(7*'
+SECRET_KEY = 'ango-insecure-5(1+%gjan1d7zf84&%_va7=r97ws!pcyj)h-flpmr_)4+(a(7*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []   
 
+
+I know I'm late, but in my case it was also just adding the KEY that I was loading locally from .env to the heroku server as an environment variable.
+
+You can simply do it like this:
+
+heroku config:set SECRET_KEY_NAME="ango-insecure-5(1+%gjan1d7zf84&%_va7=r97ws!pcyj)h-flpmr_)4+(a(7*"
 AUTH_USER_MODEL = 'authentication.Account'
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.AllowAllUsersModelBackend', 
