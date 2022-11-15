@@ -16,7 +16,6 @@ DEBUG = True
 ALLOWED_HOSTS = []   
 
 
-heroku config:set SECRET_KEY_NAME="ango-insecure-5(1+%gjan1d7zf84&%_va7=r97ws!pcyj)h-flpmr_)4+(a(7*"
 AUTH_USER_MODEL = 'authentication.Account'
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.AllowAllUsersModelBackend', 
