@@ -24,16 +24,18 @@ AUTHENTICATION_BACKENDS = (
 # Application definition
 
 INSTALLED_APPS = [
-    'authentication',
-    'Dashboard',
-    'FreePackage',
-    'QuickBuy',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'authentication',
+    'Dashboard',
+    'FreePackage',
+    'QuickBuy',
+    'quiz',
 ]
 
 MIDDLEWARE = [

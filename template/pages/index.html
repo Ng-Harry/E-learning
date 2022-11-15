@@ -32,16 +32,16 @@
                         <a class="nav-link" href="#get-started">Contact us</a>
                     </li>
                     <li class="nav-item  d-inline d-lg-none">
-                        <a class="nav-link" href="authentication-screens/login.html">login</a>
+                        <a class="nav-link" href="{% url 'login' %}">login</a>
                     </li>
                     <li class="nav-item  d-inline d-lg-none">
-                        <a class="nav-link" href="signup_options.html">signup</a>
+                        <a class="nav-link" href="{% url 'register' %}">signup</a>
                     </li>
                 </ul>
             </div>
             <div class="col-xxl-2 auth_btns col-md-3 me-lg-5 d-none d-lg-block ">
-                <a href="login.html" class="btn me-2" id="login">Log in</a>
-                <a href="signup_options.html" class="btn" id="signup">Sign up</a>
+                <a href="{% url 'login' %}" class="btn me-2" id="login">Log in</a>
+                <a href="{% url 'register' %}" class="btn" id="signup">Sign up</a>
             </div>
         </div>
     </nav>
@@ -419,14 +419,11 @@
         </div><!-- copyright -->
 
     </footer>
-
+ 
 
     {% endblock %}
 
-
-
-
-    <script src="{% static 'vendors/aos-master/dist/aos.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/aos-master/dist/aos.js' %}" type="text/javascript"></script>
 
     <script>
         AOS.init();

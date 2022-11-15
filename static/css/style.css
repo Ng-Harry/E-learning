@@ -545,7 +545,7 @@ nav .auth_btns a:first-child:hover {
 -----------------------------------*/
 #about-us{
     color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.527)), url(../images/about-us-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.527)), url(../images/about-us-bg-2.jpg);
     /* background: linear-gradient(#1d1051be, #1d1051be), url(../images/about-us-bg.jpg); */
     background-attachment: fixed;
     background-position: center;
@@ -2364,6 +2364,17 @@ nav#logged_in .dropdown-item i.bi {
 #grade-section .wishlist table td:last-child{
     color: #5627da;
 }
+
+#main #chart {
+  max-width: 800px;
+  margin: 35px 20px;
+  opacity: 0.9;
+}
+
+#timeline-chart .apexcharts-toolbar {
+  opacity: 1;
+  border: 0;
+}
 /* -----------------------------
     -----------------------------
         -----------------------------
@@ -2388,6 +2399,14 @@ nav#logged_in .dropdown-item i.bi {
     border: 1px solid #d1d1d162;
     border-radius: 7px;
     cursor: pointer;
+}
+
+#chart-section .progress-box .box:hover .icon span{
+    transition: all 0.25s ease-in-out;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 #chart-section .box .icon{
