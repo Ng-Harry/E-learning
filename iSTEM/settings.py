@@ -16,10 +16,6 @@ DEBUG = True
 ALLOWED_HOSTS = []   
 
 
-I know I'm late, but in my case it was also just adding the KEY that I was loading locally from .env to the heroku server as an environment variable.
-
-You can simply do it like this:
-
 heroku config:set SECRET_KEY_NAME="ango-insecure-5(1+%gjan1d7zf84&%_va7=r97ws!pcyj)h-flpmr_)4+(a(7*"
 AUTH_USER_MODEL = 'authentication.Account'
 AUTHENTICATION_BACKENDS = (
